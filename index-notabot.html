@@ -3,11 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>MyMel2001's Homepage</title>
     <!-- Browser compatibility check - must run before other scripts -->
     <script>
-        alert("This site has been (mostly) discontinued. Most areas are closed to the public.")
+        // Check for IE7 or below
+        var isOldIE = (function() {
+            var ua = window.navigator.userAgent;
+            var msie = ua.indexOf("MSIE ");
+            if (msie > 0) {
+                return parseInt(ua.substring(msie + 5, ua.indexOf(".", msie))) <= 7;
+            }
+            return false;
+        })();
+
+        // Check for old Netscape/Firefox
+        var isOldNetscape = (function() {
+            var ua = window.navigator.userAgent;
+            if (ua.indexOf("Netscape") > -1) {
+                var version = parseFloat(ua.substring(ua.indexOf("Netscape") + 9));
+                return version <= 5;
+            }
+            if (ua.indexOf("Firefox") > -1) {
+                var version = parseFloat(ua.substring(ua.indexOf("Firefox") + 8));
+                return version <= 3.5;
+            }
+            return false;
+        })();
+
+        // Redirect if browser is too old
+        if (isOldIE || isOldNetscape) {
+            window.location.href = "compat/index.html";
+        }
     </script>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="css/style.css">
     <!-- Mobile redirect script - must run before other scripts -->
@@ -39,72 +70,70 @@
     <div class="container">
         <!-- Header -->
         <header>
-            <h1 class="site-title">Welcome to the Homepage!</h1>
+            <h1 class="site-title"><img src="me.png" width="8%"></img> Welcome to MyMel2001's Homepage! <img src="me.png" width="8%"></img></h1>
             <div class="construction">
+                <img src="images/construction.gif" alt="Under Construction">
+                <span>Site last updated: <script>document.write(new Date().toLocaleDateString());</script></span>
             </div>
-            <marquee scrollamount="3" behavior="scroll" direction="left">Welcome to my personal homepage!</marquee>
+            <marquee scrollamount="3" behavior="scroll" direction="left">Welcome to my personal homepage! Thanks for stopping by!</marquee>
         </header>
 
         <nav>
             <table class="menu-table">
                 <tr>
                     <td><a href="index.html">Home</a></td>
+                    <td><a href="about.html">About Me</a></td>
                     <td><a href="log/blog-posts">Archived Blog</a></td>
                     <td><a href="log/">Log</a></td>
+                    <td><a href="links-normal.html">Cool Links</a></td>
+                    <td><a href="compat/index.html">Compatibility Mode</a></td>
                 </tr>
             </table>
         </nav>
 
         <main>
             <section class="intro">
-                <h2>Gone.</h2>
+                <h2>My Melody - Tech, Operating Systems, and Coding!</h2>
+                <p>Hello and welcome to my personal homepage! This site is best viewed with Netscape Navigator 4.0 or Internet Explorer 5.0 at 800x600 resolution.</p>
+                <hr>
             </section>
 
             <section class="content">
-                <p>
-        I have chosen to step away from most of my online presence because I needed to
-        protect my privacy and mental well‑being. The constant feeling that I was being
-        watched made everyday browsing feel like an invasion, and the anxiety grew
-        overwhelming. I realized I could no longer ignore the impact this had on my
-        ability to think clearly and live in the moment.
-    </p>
+                <h2>About Me</h2>
+                <p>I'm MyMel2001 (also known as The Great Melody, My Mel, My Melody, NodeMixaholic, or Sparksammy - none of which are my real name - nor is "Sammy Lord"), and I'm passionate about coding, Linux, and all things tech! This is my personal space on the World Wide Web where I share my projects and thoughts.</p>
+                
+                <div class="updates">
+                    <h3>My Projects:</h3>
+                    <ul>
+                        <li>Several programming experiments</li>
+                        <li>OS customization and tools</li>
+                        <li>Web development adventures</li>
+                        <li>Modern computing projects - sometimes with a retro twist!</li>
+                    </ul>
+                </div>
 
-    <p>
-        The final straw came when I detected suspicious activity from someone who called
-        themselves a "friend." Up until then, I trusted this person quite a bit, but then they acted like a
-        fed – somehow having my personal info and some sort of "list." I felt "sused out"
-        – the term I use for being so deeply unsettled that I could no longer stay
-        connected to the platforms they could probe. Their betrayal (real or not) confirmed that I could
-        not safely continue sharing my life online.
-    </p>
+                <div>
+                    <h3>Recent Updates: <span class="blink">NEW!</span></h3>
+                    <div class="update-box">
+                        <p><b>Archived Blog Posts:</b> Check out my <a href="log/blog-posts">blog</a> for my older thoughts and experiences!</p>
+                        <p><b>Project Updates:</b> View my <a href="log/">log</a> to see what I've been working on lately and my thoughts on life.</p>
+                    </div>
+                </div>
 
-    <p>
-        Consequently, I quit most forms of social media and web content, shutting down the
-        majority of my own sites. I kept only Free and Open‑Source Software (FOSS) services
-        that I could control and trust. I still rely on a few proprietary services, but I’m
-        not disclosing which ones. Even with those safeguards, I remain scared,
-        confused, and paranoid. The realization that people I considered friends could
-        betray me has left me wary of forming new online relationships.
-    </p>
-
-    <p>
-        I want to acknowledge one person in particular: "Void." You were a true friend (that is, 
-        if the whole glowie thing was a joke - albeit a real bad one.), and I am genuinely 
-        sorry that I had to leave so abruptly. I hope you understand that my disappearance was 
-        not a reflection of our friendship, but a necessary step for my safety and peace of mind.
-    </p>
-
-    <p>
-        If anyone needs to reach me, please email me at
-        <a href="mailto:no.glowing@sllord.info">no.glowing@sllord.info</a>. You can also
-        view any (remaining) open‑source projects on my git server at
-        <a href="https://git.nodemixaholic.com" target="_blank">https://git.nodemixaholic.com</a>.
-    </p>
+                <div>
+                    <h3>Connect With Us:</h3>
+                    <p>Feel free to reach out if you have similar interests or just want to chat about tech! (Or just about anything, really!) Aged 18 years old or above only.</p>
+                    <p>Matrix: (Me, somewhat active) @sammy:matrix.nodemixaholic.com (pseudonym-based)</p>
+                    <p>Session ID (Kuromi, active, recommended): 05bb78d255f0ecb390001b2372723faf6eacee3141e5ea6299e6d3992982ab1268</p>
+                    <p>Email (Someone, least recommended/least active): hello *at* sllord (dot) info (pseudonym-based domain)</p>
+                    <p>Bluesky (Me, most active): https://bsky.app/profile/nodemixaholic.com</p>
+                    <p>Bluesky (Kuromi, pretty active): https://bsky.app/profile/kuromi.nodemixaholic.com</p>
+                </div>
             </section>
         </main>
 
         <div class="ad-section">
-            <h3>🎮 Play Luanti! <span class="blink">NEW!</span></h3>
+            <h3>🎮 Play Luanti with Me! <span class="blink">NEW!</span></h3>
             <div class="ad-box" style="border: 2px dashed #9999cc; padding: 10px; background-color: #f0f0ff; margin: 10px 0;">
                 <p><b>Join the Luanti server in 1 easy step (besides downloading Luanti):</b></p>
                 <ol>
@@ -114,6 +143,16 @@
             </div>
         </div>
 
+        <div class="webrings">
+            <h3>Proud Member Of:</h3>
+            <table class="webring-table">
+                <tr>
+                    <td><a href="#">&lt;&lt; Prev</a></td>
+                    <td>My Mel's Tech Enthusiasts Webring</td>
+                    <td><a href="#">Next &gt;&gt;</a></td>
+                </tr>
+            </table>
+        </div>
 
         <!-- Footer -->
         <footer>
@@ -122,7 +161,18 @@
                 <p class="quote">"The AI is just a canvas. It is useless without the paints that are the prompts." <span class="quote-author">--also me</span></p>
                 <p class="quote">"Buying a computer is a lot like buying toilet paper - buy it nice or buy it twice." <span class="quote-author">--also me</span></p>
             </div>
-            <p>© 2001-<script>document.write(new Date().getFullYear());</script> Sam Lee. All rights reserved.</p>
+            <p>© 2001-<script>document.write(new Date().getFullYear());</script> The Great Melody. All rights reserved.</p>
+            <p>Best viewed with Netscape Navigator or Internet Explorer</p>
+            <div class="browser-icons">
+                <img src="images/netscape.gif" alt="Netscape">
+                <img src="images/ie.gif" alt="Internet Explorer">
+            </div>
+            <p>This page is <span id="page-size">12</span>K. Last updated: <script>document.write(new Date().toLocaleDateString());</script></p>
+            <p><a href="index.html">Return to Home</a></p>
+            
+            <hr>
+            <p><b>PRO TIP:</b> Using a very old mobile phone? Check out our WAP 2.0 version at http://nodemixaholic.com/compat/wap/ for a mobile-optimized experience!</p>
+            <script type="text/javascript" src="https://counter.websiteout.com/js/2/0/1000/1"></script>
         </footer>
     </div>
     
