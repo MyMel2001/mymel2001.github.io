@@ -1,0 +1,26 @@
+# Tree of files in log/blog-posts
+
+=> 5-19-2024-A-parody-of-the-song-Payphone-for-GAC.gmi    5-19-2024-A-parody-of-the-song-Payphone-for-GAC.gmi
+=> 5-23-2024-A-list-of-shitty-services-and-their-more-based-alternatives.gmi    5-23-2024-A-list-of-shitty-services-and-their-more-based-alternatives.gmi
+=> 5-23-2024-Is-your-son-a-computer-hacker.gmi    5-23-2024-Is-your-son-a-computer-hacker.gmi
+=> 6-1-2024-646.gmi    6-1-2024-646.gmi
+=> 6-7-2024-STAAR-High-School-Practice-Test-PDFs.gmi    6-7-2024-STAAR-High-School-Practice-Test-PDFs.gmi
+=> 6-7-2024-Why-I-switched-from-Chromebook-to-Linux-Mint-on-gaming-desktop.gmi    6-7-2024-Why-I-switched-from-Chromebook-to-Linux-Mint-on-gaming-desktop.gmi
+=> 6-7-2024-Why-I-switched-to-Chromebook.gmi    6-7-2024-Why-I-switched-to-Chromebook.gmi
+=> 7-10-2024-KMSpico.gmi    7-10-2024-KMSpico.gmi
+=> 7-27-2024---A-quick-update-on-my-life.gmi    7-27-2024---A-quick-update-on-my-life.gmi
+=> 7-6-2024---Why-I-switched-from-Windows-11-back-to-Linux-Mint.gmi    7-6-2024---Why-I-switched-from-Windows-11-back-to-Linux-Mint.gmi
+=> 8-25-2024-Why-Biohacking-is-Bad.gmi    8-25-2024-Why-Biohacking-is-Bad.gmi
+=> 8-7-2024---Why-I-quit-discord.gmi    8-7-2024---Why-I-quit-discord.gmi
+=> 8-8-2024-Samantha-Chat.gmi    8-8-2024-Samantha-Chat.gmi
+=> 9-4-2024-Why-Some-People-Call-AI-Art-"AI-Slop".gmi    9-4-2024-Why-Some-People-Call-AI-Art-"AI-Slop".gmi
+=> gmify.sh    gmify.sh
+=> index.gmi    index.gmi
+=> index.html    index.html
+=> README.gmi    README.gmi
+=> Sparksammy-Blog-Archives---Page-0.gmi    Sparksammy-Blog-Archives---Page-0.gmi
+=> Sparksammy-Blog-Archives---Page-1.gmi    Sparksammy-Blog-Archives---Page-1.gmi
+=> Sparksammy-Blog-Archives---Page-2.gmi    Sparksammy-Blog-Archives---Page-2.gmi
+=> Sparksammy-Blog-Archives---Page-3.gmi    Sparksammy-Blog-Archives---Page-3.gmi
+=> Sparksammy-Blog-Archvies---Page-4.gmi    Sparksammy-Blog-Archvies---Page-4.gmi
+=> Why-I-switched-from-Linux-Mint-back-to-Windows-11.gmi    Why-I-switched-from-Linux-Mint-back-to-Windows-11.gmi
