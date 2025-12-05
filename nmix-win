@@ -1,0 +1,2 @@
+curl -L -o C:\Windows\Panther\autounattend.xml https://raw.githubusercontent.com/mymel2001-holder/nodemixaholic-unattend/refs/heads/main/autounattend.xml
+%WINDIR%\System32\Sysprep\Sysprep.exe /oobe /unattend:C:\Windows\Panther\autounattend.xml /reboot
