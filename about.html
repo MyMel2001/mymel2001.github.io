@@ -1,68 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
     <title>About Me - MyMel2001's Homepage</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="css/style.css">
-    <!-- Mobile redirect script - must run before other scripts -->
-    <script src="js/mobileRedirect.js"></script>
-    <script src="js/main.js" defer></script>
-    <script src="js/music.js" defer></script>
     <style>
-        /* Basic styling */
-        body {
-            font-family: "Comic Sans MS", "Arial", sans-serif;
-            background-color: #ccccff;
-            color: #000080;
-            margin: 0;
-            padding: 0;
-            background-image: url('images/stars.gif');
-        }
-        
-        .container {
-            width: 760px;
-            margin: 0 auto;
-            border: 2px solid #9999cc;
-            background-color: #ffffff;
-            padding: 10px;
-            box-shadow: 5px 5px 10px #666666;
-        }
-        
         .avatar {
             float: left;
             margin-right: 15px;
             border: 3px solid #9999cc;
         }
-        
         .profile {
-            overflow: hidden;
             margin-bottom: 20px;
         }
-        
         .profile-details {
-            overflow: hidden;
+            margin-left: 120px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <!-- Header -->
-        <header>
-            <h1 class="site-title"><img src="me.png" width="8%"></img> Welcome to MyMel2001's Homepage! <img src="me.png" width="8%"></img></h1>
+        <div class="header">
+            <h1 class="site-title"><img src="me.png" width="8%"> Welcome to MyMel2001's Homepage! <img src="me.png" width="8%"></h1>
             <div class="construction">
                 <img src="images/construction.gif" alt="Under Construction">
                 <span>Site last updated: <script>document.write(new Date().toLocaleDateString());</script></span>
             </div>
             <marquee scrollamount="3" behavior="scroll" direction="left">Welcome to my personal homepage! Thanks for stopping by!</marquee>
-        </header>
+        </div>
 
-        <nav>
+        <div class="nav">
             <table class="menu-table">
                 <tr>
                     <td><a href="index.html">Home</a></td>
@@ -70,15 +39,14 @@
                     <td><a href="log/blog-posts">Archived Blog</a></td>
                     <td><a href="log/">Log</a></td>
                     <td><a href="links-normal.html">Cool Links</a></td>
-                    <td><a href="compat/index.html">Compatibility Mode</a></td>
                 </tr>
             </table>
-        </nav>
+        </div>
 
-        <main>
-            <section class="about-me">
+        <div class="main-content">
+            <div class="about-me">
                 <h2>About Me</h2>
-                
+
                 <div class="profile">
                     <img src="images/avatar.gif" alt="My Avatar" class="avatar">
                     <div class="profile-details">
@@ -88,13 +56,13 @@
                         <p><b>Hobbies:</b> Vibe Coding, macOS, Linux Homelab, AI, and Technology</p>
                     </div>
                 </div>
-                
+
                 <div class="bio">
                     <h3>My Bio</h3>
                     <p>Welcome to my personal page! I am a tech enthusiast who loves working with code and exploring new technologies. I've been passionate about computers since I first encountered them.</p>
-                    
+
                     <p>I spend most of my time working on various programming projects, exploring Linux, and sharing my knowledge with others online.</p>
-                    
+
                     <h3>My Skills</h3>
                     <ul>
                         <li>Vibe Coding</li>
@@ -103,11 +71,11 @@
                         <li>Tech</li>
                     </ul>
                 </div>
-            </section>
-        </main>
+            </div>
+        </div>
 
         <!-- Footer -->
-        <footer>
+        <div class="footer">
             <div class="quotes">
                 <p class="quote">"Find a balance between freedom, comfort, and flexibility; for there is not such thing as full freedom." <span class="quote-author">--me</span></p>
                 <p class="quote">"The AI is just a canvas. It is useless without the paints that are the prompts." <span class="quote-author">--also me</span></p>
@@ -120,9 +88,7 @@
             </div>
             <p>This page is <span id="page-size">12</span>K. Last updated: <script>document.write(new Date().toLocaleDateString());</script></p>
             <p><a href="index.html">Return to Home</a></p>
-        </footer>
+        </div>
     </div>
-    
-    <!-- Music is handled entirely by JavaScript -->
 </body>
-</html> 
+</html>

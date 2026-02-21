@@ -1,77 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
     <title>Cool Links - MyMel2001's Homepage</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/main.js" defer></script>
-    <script src="js/music.js" defer></script>
-    <style>
-        /* Style for the iframes - CSS-only resizing solution */
-        .header-frame {
-            width: 100%;
-            border: none;
-            overflow: hidden;
-            /* Default height for desktop */
-            height: 195px;
-        }
-        .footer-frame {
-            width: 100%;
-            border: none;
-            overflow: hidden;
-            /* Fixed height for footer */
-            height: 145px;
-        }
-        /* Media queries for responsive iframe heights */
-        @media (max-width: 768px) {
-            /* Mobile header height */
-            .header-frame {
-                height: 85px;
-            }
-            /* Mobile footer height */
-            .footer-frame {
-                height: 50px;
-            }
-        }
-        /* Adjust heights at different breakpoints if needed */
-        @media (min-width: 769px) and (max-width: 1024px) {
-            .header-frame {
-                height: 210px;
-            }
-            .footer-frame {
-                height: 155px;
-            }
-        }
-        /* Large screens */
-        @media (min-width: 1025px) {
-            .header-frame {
-                height: 220px;
-            }
-            .footer-frame {
-                height: 160px;
-            }
-        }
-    </style>
 </head>
 <body>
     <div class="container">
         <!-- Header -->
-        <header>
-            <h1 class="site-title"><img src="me.png" width="8%"></img> Welcome to MyMel2001's Homepage! <img src="me.png" width="8%"></img></h1>
+        <div class="header">
+            <h1 class="site-title"><img src="me.png" width="8%"> Welcome to MyMel2001's Homepage! <img src="me.png" width="8%"></h1>
             <div class="construction">
                 <img src="images/construction.gif" alt="Under Construction">
                 <span>Site last updated: <script>document.write(new Date().toLocaleDateString());</script></span>
             </div>
             <marquee scrollamount="3" behavior="scroll" direction="left">Welcome to my personal homepage! Thanks for stopping by!</marquee>
-        </header>
+        </div>
 
-        <nav>
+        <div class="nav">
             <table class="menu-table">
                 <tr>
                     <td><a href="index.html">Home</a></td>
@@ -79,69 +26,69 @@
                     <td><a href="log/blog-posts">Archived Blog</a></td>
                     <td><a href="log/">Log</a></td>
                     <td><a href="links-normal.html">Cool Links</a></td>
-                    <td><a href="compat/index.html">Compatibility Mode</a></td>
                 </tr>
             </table>
-        </nav>
+        </div>
 
-        <main>
-            <section class="desktop-only">
-                <h2>My Personal Links <span class="blink">HOT!</span></h2>
+        <div class="main-content">
+            <div class="desktop-only">
+                <h2>My Personal Links <blink>HOT!</blink></h2>
                 <div class="links-category">
                     <table class="links-table">
                         <tr>
                             <th colspan="2">Check Out My Stuff!</th>
                         </tr>
                         <tr>
-                            <td><img src="images/bullet.gif" alt="*"></td>
+                            <td class="icon-cell"><img src="images/bullet.gif" alt="*"></td>
                             <td><a href="wallpapers/">sparkSammy.com</a> - Really great fake news, its the best fake news, and believe me - we are taking it to the big league, by taking real news and making fake news out of it.</td>
                         </tr>
-                        <tr>
-                            <td><img src="images/bullet.gif" alt="*"></td>
+                        <tr class="even-row">
+                            <td class="icon-cell"><img src="images/bullet.gif" alt="*"></td>
                             <td><a href="guides/">Guides</a> - Tech guides and tutorials!</td>
                         </tr>
                         <tr>
-                            <td><img src="images/bullet.gif" alt="*"></td>
+                            <td class="icon-cell"><img src="images/bullet.gif" alt="*"></td>
                             <td><a href="webball/">Space Cadet Pinball WebASM</a> - Classic pinball in your browser!</td>
                         </tr>
-                        <tr>
-                            <td><img src="images/bullet.gif" alt="*"></td>
+                        <tr class="even-row">
+                            <td class="icon-cell"><img src="images/bullet.gif" alt="*"></td>
                             <td><a href="https://github.com/MyMel2001" target="_blank">Code</a> - Check out my code repositories!</td>
                         </tr>
                         <tr>
-                            <td><img src="images/bullet.gif" alt="*"></td>
+                            <td class="icon-cell"><img src="images/bullet.gif" alt="*"></td>
                             <td><a href="https://ollama.com/sparksammy" target="_blank">Ollama LLMs</a> - My LLM models!</td>
                         </tr>
-                        <tr>
-                            <td><img src="images/bullet.gif" alt="*"></td>
+                        <tr class="even-row">
+                            <td class="icon-cell"><img src="images/bullet.gif" alt="*"></td>
                             <td><a href="https://chan.nodemixaholic.com" target="_blank">sChan</a> - My custom imageboard!</td>
                         </tr>
                         <tr>
-                            <td><img src="images/bullet.gif" alt="*"></td>
+                            <td class="icon-cell"><img src="images/bullet.gif" alt="*"></td>
                             <td><a href="https://booru.nodemixaholic.com" target="_blank">SamBooru</a> - My custom booru!</td>
                         </tr>
-                         <tr>
-                            <td><img src="images/bullet.gif" alt="*"></td>
+                        <tr class="even-row">
+                            <td class="icon-cell"><img src="images/bullet.gif" alt="*"></td>
                             <td><a href="https://mayaspace.nodemixaholic.com" target="_blank">Mayaspace</a> - A social network named after a cat!</td>
                         </tr>
                         <tr>
-                            <td><img src="images/bullet.gif" alt="*"></td>
+                            <td class="icon-cell"><img src="images/bullet.gif" alt="*"></td>
                             <td><a href="https://x-erpt.nodemixaholic.com" target="_blank">X-Erpt</a> - A clone of Swift!</td>
                         </tr>
-                        <tr>
-                            <td><img src="images/bullet.gif" alt="*"></td>
+                        <tr class="even-row">
+                            <td class="icon-cell"><img src="images/bullet.gif" alt="*"></td>
                             <td><a href="https://search.sparksammy.com" target="_blank">My Whoogle</a> - The Google Proxy!</td>
-                        <tr>
-                            <td><img src="images/bullet.gif" alt="*"></td>
-                            <td><a href="https://sparkys-cddc.bandcamp.com" target="_blank">CD/DC</a> - My bandcamp!</td>
                         </tr>
                         <tr>
-                            <td><img src="images/bullet.gif" alt="*"></td>
+                            <td class="icon-cell"><img src="images/bullet.gif" alt="*"></td>
+                            <td><a href="https://sparkys-cddc.bandcamp.com" target="_blank">CD/DC</a> - My bandcamp!</td>
+                        </tr>
+                        <tr class="even-row">
+                            <td class="icon-cell"><img src="images/bullet.gif" alt="*"></td>
                             <td><a href="https://drop.nodemixaholic.com" target="_blank">SnapDrop (self-hosted)</a> - A great airdrop alternative!</td>
                         </tr>
                     </table>
                 </div>
-                
+
                 <h2>Web Time Machine <img src="images/construction.gif" width="20" height="20"></h2>
                 <p>Take a blast to the past with these archived versions of popular websites!</p>
 
@@ -151,19 +98,19 @@
                             <th colspan="2">2001-2014 Web Archives</th>
                         </tr>
                         <tr>
-                            <td><img src="images/bullet.gif" alt="*"></td>
+                            <td class="icon-cell"><img src="images/bullet.gif" alt="*"></td>
                             <td><a href="https://web.archive.org/web/20040814084838/http://www.google.com/" target="_blank">Google (August 2004)</a> - Remember when Google was simple?</td>
                         </tr>
-                        <tr>
-                            <td><img src="images/bullet.gif" alt="*"></td>
+                        <tr class="even-row">
+                            <td class="icon-cell"><img src="images/bullet.gif" alt="*"></td>
                             <td><a href="https://web.archive.org/web/20040623234835/http://www.microsoft.com/" target="_blank">Microsoft (June 2004)</a> - Windows XP era Microsoft!</td>
                         </tr>
                         <tr>
-                            <td><img src="images/bullet.gif" alt="*"></td>
+                            <td class="icon-cell"><img src="images/bullet.gif" alt="*"></td>
                             <td><a href="https://web.archive.org/web/20010804233815/http://www.debian.org/" target="_blank">Debian (August 2001)</a> - Early days of this Linux distro!</td>
                         </tr>
-                        <tr>
-                            <td><img src="images/bullet.gif" alt="*"></td>
+                        <tr class="even-row">
+                            <td class="icon-cell"><img src="images/bullet.gif" alt="*"></td>
                             <td><a href="https://web.archive.org/web/20010805080524/http://www.kernel.org/" target="_blank">Kernel.org (August 2001)</a> - Linux kernel back in the day!</td>
                         </tr>
                     </table>
@@ -172,30 +119,30 @@
                 <div class="links-category">
                     <table class="links-table">
                         <tr>
-                            <th colspan="2">Classic Games & Fun Sites</th>
+                            <th colspan="2">Classic Games &amp; Fun Sites</th>
                         </tr>
                         <tr>
-                            <td><img src="images/bullet.gif" alt="*"></td>
+                            <td class="icon-cell"><img src="images/bullet.gif" alt="*"></td>
                             <td><a href="https://web.archive.org/web/20031202172726/http://rocketsnail.com/" target="_blank">RocketSnail (December 2003)</a> - Before Club Penguin!</td>
                         </tr>
-                        <tr>
-                            <td><img src="images/bullet.gif" alt="*"></td>
+                        <tr class="even-row">
+                            <td class="icon-cell"><img src="images/bullet.gif" alt="*"></td>
                             <td><a href="https://web.archive.org/web/20080622022502/http://www.coolmath-games.com/" target="_blank">Cool Math Games (June 2008)</a> - "Math" was never so fun!</td>
                         </tr>
                         <tr>
-                            <td><img src="images/bullet.gif" alt="*"></td>
+                            <td class="icon-cell"><img src="images/bullet.gif" alt="*"></td>
                             <td><a href="https://web.archive.org/web/20070106052105/http://www.clubpenguin.com/" target="_blank">Club Penguin (Jan 6, 2007)</a> - Waddle around and meet new friends!</td>
                         </tr>
-                        <tr>
-                            <td><img src="images/bullet.gif" alt="*"></td>
+                        <tr class="even-row">
+                            <td class="icon-cell"><img src="images/bullet.gif" alt="*"></td>
                             <td><a href="https://web.archive.org/web/20130126201620/http://toontown.go.com/?r=292659" target="_blank">Toontown (Jan 26, 2013)</a> - Are you toon enough?</td>
                         </tr>
                     </table>
                 </div>
-            </section>
+            </div>
 
 
-        </main>
+        </div>
 
         <div class="webrings desktop-only">
             <h3>Proud Member Of:</h3>
@@ -209,7 +156,7 @@
         </div>
 
          <!-- Footer -->
-         <footer>
+         <div class="footer">
             <div class="quotes">
                 <p class="quote">"Find a balance between freedom, comfort, and flexibility; for there is not such thing as full freedom." <span class="quote-author">--me</span></p>
                 <p class="quote">"The AI is just a canvas. It is useless without the paints that are the prompts." <span class="quote-author">--also me</span></p>
@@ -222,9 +169,7 @@
             </div>
             <p>This page is <span id="page-size">12</span>K. Last updated: <script>document.write(new Date().toLocaleDateString());</script></p>
             <p><a href="index.html">Return to Home</a></p>
-        </footer>
+        </div>
     </div>
-    
-    <!-- Music is now handled entirely by JavaScript -->
 </body>
-</html> 
+</html>
