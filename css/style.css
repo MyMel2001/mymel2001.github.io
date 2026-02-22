@@ -5,7 +5,6 @@ body {
     color: #000080;
     margin: 0;
     padding: 0;
-    background-image: url('../images/stars.gif');
 }
 
 .container {
@@ -180,11 +179,7 @@ h3 {
 
 .browser-icons {
     margin: 10px 0;
-}
-
-.browser-icons img {
-    height: 30px;
-    margin: 0 5px;
+    font-weight: bold;
 }
 
 /* Links */
