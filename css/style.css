@@ -96,9 +96,6 @@ h3 {
     margin-bottom: 20px;
 }
 
-.updates ul {
-    list-style-image: url('../images/bullet.gif');
-}
 
 /* Update Box Styles */
 .update-box {
@@ -148,10 +145,6 @@ h3 {
     background-color: #eeeeff;
 }
 
-.links-table td img {
-    width: 16px;
-    height: 16px;
-}
 
 .links-table tr.even-row {
     background-color: #f8f8ff;
@@ -208,21 +201,3 @@ a:visited {
     color: #800080;
 }
 
-/* About Page Styles */
-.avatar {
-    float: left;
-    margin-right: 15px;
-    border: 3px solid #9999cc;
-}
-
-.profile {
-    margin-bottom: 20px;
-}
-
-.profile-details {
-    margin-left: 120px;
-}
-
-.bio {
-    clear: both;
-}
