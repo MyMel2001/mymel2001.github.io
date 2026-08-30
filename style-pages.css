@@ -40,3 +40,8 @@ a:active {
     margin-bottom: 32%;
     margin-bottom: 1vh;
 }
+
+#constructionMarquee {
+    background-color: #ffff00;
+    color: #ffffff;
+}
