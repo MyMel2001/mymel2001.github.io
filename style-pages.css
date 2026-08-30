@@ -1,0 +1,42 @@
+body {
+    background-color: #964545;
+    color: #b6dbed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a:hover {
+    color: #84ffff;
+    font-style: oblique;
+}
+a:visited {
+    color: #54cae8;
+    font-style: italic;
+}
+a:link {
+    color: #00ffff;
+    font-style: normal;
+}
+a:active {
+    color: #7dddf4;
+    font-style: oblique italic;
+}
+#newsTicker {
+    height: 12%;
+}
+#news {
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+#newsDiv {
+    height: 98%;
+    width: 100%;
+    overflow: auto;
+    scrollbar-width: none;
+}
+#mel {
+    height: 32%;
+    float: left;
+    margin-right: 3%;
+    margin-bottom: 32%;
+    margin-bottom: 1vh;
+}
